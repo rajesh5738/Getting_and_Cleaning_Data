@@ -38,4 +38,4 @@ cols <- c("subject","activity")
 aggregateData <- aggregateData[,!(names(aggregateData) %in% cols)]
 aggregateData = merge(aggregateData, activityLabels)
 #Step6: write final tidy data to a file  
-write.table(aggregateData, './tidyData.txt',row.names=TRUE,sep='\t');
+write.table(aggregateData, './tidyData.txt',row.names=FALSE,sep='\t');
